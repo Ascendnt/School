@@ -20,12 +20,12 @@ plt.xticks(np.arange(-7, 8, 1))
 
 plt.subplot(1, 3, 3); plt.stem(nc, 2.*xc)
 plt.xlabel('n'); plt.ylabel('x[n]')
-plt.title('Advanced Unit Step'); plt.grid(True)
+plt.title('Advanced Unit Step by 5'); plt.grid(True)
 plt.xticks(np.arange(-7, 8, 1))
 
 plt.subplot(1, 3, 2); plt.stem(nb, xb)
 plt.xlabel('n'); plt.ylabel('x[n]')
-plt.title('Delayed Unit Step'); plt.grid(True)
+plt.title('Delayed Unit Step by 3'); plt.grid(True)
 plt.xticks(np.arange(-7, 8, 1))
 
 
