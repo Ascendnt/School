@@ -1,3 +1,4 @@
+#x[-n + 3] * y[-n-4] * z[-n + 2]
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -10,17 +11,6 @@ def flipsig(n,x):
     xf = x[::-1] #flipped x
     nf = -n[::-1] #flipped n
     return nf, xf
-
-def sigadd(n1, x1, n2, x2):
-    n = np.arange(min(min(n1), min(n2)), max(max(n1), max(n2)) + 1)
-    y1 = np.zeros(len(n))
-    y2 = np.zeros(len(n))
-    index1 = (n >= min(n1)) & (n <= max(n1))
-    index2 = (n >= min(n2)) & (n <= max(n2))
-    y1[index1] = x1
-    y2[index2] = x2
-    y = y1 + y2
-    return n, y
 
 def sigmult(n1, x1, n2, x2, n3, x3):
     n = np.arange(min(min(n1), min(n2), min(n3)), max(max(n1), max(n2), max(n3))+ 1)
@@ -50,13 +40,13 @@ xa = 2 * x1
 
 # 3y[-n]
 nb, xb = flipsig(n2, 3 * x2)
+nb, xb = sigshift(x2, n2, -4)
 
 #z[n+2]
 nc, xc = sigshift(x3, n3, -2)
 
 #Signal operation
 nd, xd = sigmult(na, xa, nb, xb, nc, xc)
-nd, xd = sigadd(na, xa, nd, xd)
 
 #Plot 2x[n]
 plt.subplot(2, 2, 1); plt.stem(na, xa)
