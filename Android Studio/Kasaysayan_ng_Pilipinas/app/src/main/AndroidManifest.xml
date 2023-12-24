@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Kasaysayan_ng_Pilipinas"
         tools:targetApi="31">
         <activity
+            android:name=".PhilippineSelfRuleDescription"
+            android:exported="false" />
+        <activity
+            android:name=".PhilippineSelfRuleVideo"
+            android:exported="false" />
+        <activity
+            android:name=".AmericanVideo"
+            android:exported="false" />
+        <activity
+            android:name=".AmericanDescription"
+            android:exported="false" />
+        <activity
+            android:name=".JapaneseVideo"
+            android:exported="false" />
+        <activity
+            android:name=".JapaneseDescription"
+            android:exported="false" />
+        <activity
             android:name=".SpanishVideo"
             android:exported="false" />
         <activity
