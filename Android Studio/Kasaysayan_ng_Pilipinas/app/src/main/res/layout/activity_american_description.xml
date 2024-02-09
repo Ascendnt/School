@@ -7,14 +7,29 @@
     tools:context=".AmericanDescription">
 
 
-    <TextView
+    <me.biubiubiu.justifytext.library.JustifyTextView
         android:id="@+id/textView2"
-        android:layout_width="404dp"
-        android:layout_height="122dp"
-        android:text="@string/spanishDesc"
+        android:layout_width="336dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="320dp"
+        android:text="@string/americanDesc"
+
+        android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="336dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/american_description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

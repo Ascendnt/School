@@ -7,15 +7,27 @@
     tools:context=".PhilippineSelfRuleDescription">
 
 
-
-    <TextView
+    <me.biubiubiu.justifytext.library.JustifyTextView
         android:id="@+id/textView2"
-        android:layout_width="404dp"
-        android:layout_height="122dp"
-        android:text="@string/spanishDesc"
+        android:layout_width="366dp"
+        android:layout_height="466dp"
+        android:text="@string/phSelfDesc"
+        android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="366dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ph_self_rule_description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
