@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spanishRuleButton" type="id" />
+    <item name="japaneseRuleButton" type="id" />
+    <item name="americanRuleButton" type="id" />
+    <item name="philippineSelfRuleButton" type="id" />
+    <item name="spanishDescriptionButton" type="id" />
+    <item name="spanishVideoButton" type="id" />
+
+
+</resources>

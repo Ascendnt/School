@@ -1,13 +1,17 @@
 <resources>
-    <string name="app_name">Kasaysayan_ng_Pilipinas</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">Kasaysayan ng Pilipinas</string>
     <string name="nav_header_title">Kasaysayan ng Pilipinas</string>
-    <string name="nav_header_subtitle">No subtitle yet</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
     <string name="menu_home">Kasaysayan ng Pilipinas</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="spanishDesc">Spanish colonization refers to the historical period, mainly during the 15th to the 19th centuries, when Spain expanded its influence across the Americas, Asia, and the Pacific. Motivated by the search for wealth, spreading Christianity, and territorial claims, Spanish explorers and settlers encountered diverse cultures, leading to complex interactions and cultural exchanges. The Spanish Crown established vast territories, leaving a lasting impact on language, religion, and governance in regions such as Latin America and the Philippines. Despite the exploitation and conflicts, Spanish colonization played a pivotal role in shaping the history and identity of the areas it touched.
+    </string>
+    <string name="japaneseDesc">Japanese colonization unfolded during World War II from 1942 to 1945, known as the Japanese Occupation. This period brought significant challenges, including forced labor, economic exploitation, and the suppression of Filipino culture and education. Atrocities, such as the Manila Massacre in 1945, marked the harshness of Japanese policies. Amidst adversity, the occupation witnessed the emergence of Filipino guerrilla resistance movements. The Philippines became a battleground, and Filipino and Allied forces played a crucial role in the liberation, culminating in the Battle of Leyte Gulf in 1944. The defeat of Japanese forces in 1945 marked the end of the occupation but left a lasting impact on the Philippines, influencing its post-war political and social trajectory.
+    </string>
+    <string name="americanDesc">American colonization refers to the period from the early 17th century when European powers, primarily England, Spain, and France, established colonies in North America. Motivated by economic opportunities, religious freedom, and territorial expansion, colonists faced challenges such as interactions with indigenous peoples, harsh environmental conditions, and establishing self-governance. The colonization laid the foundation for the United States, shaping its cultural, political, and economic landscape.
+    </string>
+    <string name="phSelfDesc">Philippine self-rule encompasses a historical evolution from Spanish colonization to Japanese occupation and, ultimately, independence. The Filipino Revolution against Spanish rule, the declaration of the First Philippine Republic, and subsequent American colonization marked pivotal points. The establishment of the Philippine Commonwealth in 1935 granted a measure of self-governance, leading to full independence in 1946. This journey reflects the complex interplay of local resistance and geopolitical changes, defining the Philippines identity and shaping its path to autonomy.
+    </string>
+
+
+
+
 </resources>

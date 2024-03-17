@@ -1,15 +1,10 @@
+// Main Activity
 package com.example.kasaysayan_ng_pilipinas
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-//import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
+import android.widget.Button
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kasaysayan_ng_pilipinas.databinding.ActivityMainBinding
 
@@ -17,41 +12,39 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val spanishRuleButton = findViewById<Button>(R.id.spanishRuleButton)
+        spanishRuleButton.setOnClickListener{
+            val Intent = Intent(this, SpanishRule::class.java)
+            startActivity(Intent)
+        }
 
-        setSupportActionBar(binding.appBarMain.toolbar)
+        val japaneseRuleButton = findViewById<Button>(R.id.japaneseRuleButton)
+        japaneseRuleButton.setOnClickListener{
+            val Intent = Intent(this, JapaneseRule::class.java)
+            startActivity(Intent)
+        }
 
-//        binding.appBarMain.fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-//        }
-        val drawerLayout: DrawerLayout = binding.drawerLayout
-        val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
-            ), drawerLayout
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
-    }
+        val americanRuleButton = findViewById<Button>(R.id.americanRuleButton)
+        americanRuleButton.setOnClickListener{
+            val Intent = Intent(this, AmericanRule::class.java)
+            startActivity(Intent)
+        }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
+        val philippineSelfRuleButton = findViewById<Button>(R.id.philippineSelfRuleButton)
+        philippineSelfRuleButton.setOnClickListener{
+            val Intent = Intent(this, PhilippineSelfRule::class.java)
+            startActivity(Intent)
+        }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+
+//        val viewPager2: ViewPager2 = findViewById(R.id.viewPager2)
+//        val images = listOf(R.drawable.spanishrule,R.drawable.japaneserule,R.drawable.americanrule,R.drawable.philippinesselfrule)
+//
+//        viewPager2.adapter = ViewPagerAdapter(images)
+
     }
 }
