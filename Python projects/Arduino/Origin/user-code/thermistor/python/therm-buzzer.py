@@ -27,7 +27,7 @@ class THERM_BUZZER:
 			val = self.obj_arduino.cmd_analog_in(1, self.therm)
 			print(val)
 
-			if (int(val) > 550):
+			if (int(val) > 110):
 				self.obj_arduino.cmd_digital_out(1, self.buzzer, 1)				
 			else:
 				self.obj_arduino.cmd_digital_out(1, self.buzzer, 0)

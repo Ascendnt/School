@@ -11,7 +11,7 @@ void setup()
     val = analogRead(A4); //read value from thermistor
     Serial.println(val); //display
     
-    if(val > 550)
+    if(val > 110)
     {
       digitalWrite(3, HIGH); // Turn ON buzzer
     }

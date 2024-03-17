@@ -1,5 +1,5 @@
 const int sensorPin = 12; // Declare the push-button       
-int sensorValue = 0;  
+int sensorValue = 2;  
 void setup() {
   Serial.begin(115200);
   pinMode(sensorPin, INPUT);   // declare the sensorPin as an INPUT
